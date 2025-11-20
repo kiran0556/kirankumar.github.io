@@ -1,12 +1,192 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Professional Portfolio — Your Name</title>
+  <meta name="description" content="Professional portfolio showcasing services, projects and contact information." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Hello — My GitHub Pages Site</h1>
-<p>This site is deployed with GitHub Pages.</p>
+  <!-- NAV -->
+  <nav class="nav container">
+    <a class="brand" href="#home">YourName</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">☰</button>
+    <ul class="nav-list" id="navList">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>YOUR NAME — <span class="accent">Front-end Developer & Designer</span></h1>
+        <p class="lead">I build clean, accessible, and modern web experiences that help products shine online. I specialize in responsive websites, performance and UI design.</p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn">View Work</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <ul class="skill-pills" aria-hidden="true">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>UI/UX</li>
+        </ul>
+      </div>
+
+      <div class="hero-card" role="img" aria-label="Stylized laptop mockup">
+        <!-- Replace with your image or keep gradient art -->
+        <div class="mockup">
+          <img src="https://images.unsplash.com/photo-1526378721437-4f2b2b3e9b63?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Laptop mockup" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Services I Offer</h2>
+      <p class="section-sub">From pixel-perfect UI to performant front-end engineering.</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Responsive Websites</h3>
+          <p>Mobile-first responsive design that looks great on any device and loads fast.</p>
+          <p class="muted">Design → Build → Deploy</p>
+        </article>
+
+        <article class="card">
+          <h3>UI/UX Design</h3>
+          <p>Intuitive interfaces and thoughtful user flows based on best practices and testing.</p>
+          <p class="muted">Figma → Prototype → Deliver</p>
+        </article>
+
+        <article class="card">
+          <h3>Front-end Development</h3>
+          <p>Component-based development using modern tooling (React, Vite, or plain JS).</p>
+          <p class="muted">Reusable → Accessible → Performant</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-sub">A few projects that showcase my approach to design and development.</p>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Portfolio item -->
+        <figure class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project screenshot">
+          <figcaption>
+            <h4>Project One</h4>
+            <p>Marketing site with performance optimizations and accessible components.</p>
+            <a href="#" class="link">View case study →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1505682634904-d7c3c58d7a41?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project screenshot">
+          <figcaption>
+            <h4>Project Two</h4>
+            <p>Single page application with interactive UI and slick animations.</p>
+            <a href="#" class="link">View case study →</a>
+          </figcaption>
+        </figure>
+
+        <figure class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project screenshot">
+          <figcaption>
+            <h4>Project Three</h4>
+            <p>E-commerce UI with product filtering and accessible forms.</p>
+            <a href="#" class="link">View case study →</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <p class="lead">I’m a front-end developer focused on creating beautiful and usable web experiences. I’m passionate about performance, accessibility, and delightful interactions.</p>
+        <ul class="about-list">
+          <li><strong>Experience:</strong> 3+ years building web products</li>
+          <li><strong>Available for:</strong> Freelance & full-time roles</li>
+          <li><strong>Interests:</strong> Design systems, animations, and optimization</li>
+        </ul>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Let's Talk</a>
+          <a href="resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+
+      <aside class="about-card">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Portrait">
+        <blockquote>“Design adds value faster than it adds costs.” — Joel Spolsky</blockquote>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">I’m available for new projects and opportunities. Send me a message and I’ll reply within 48 hours.</p>
+
+        <ul class="contact-cards">
+          <li><strong>Email:</strong> <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+          <li><strong>Location:</strong> Your City, Country</li>
+          <li><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourname</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project..."></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset" class="btn btn-outline">Reset</button>
+        </div>
+
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <p class="muted">Built with ❤️ • <a href="https://github.com" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
