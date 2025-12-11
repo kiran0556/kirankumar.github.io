@@ -3,8 +3,8 @@
 This repository contains a simple static website deployed using **GitHub Pages**.
 
 ### 🚀 Live Website:
-https://yourusername.github.io  
-*(Replace `yourusername` after deployment)*
+(https://kiran0556.github.io/kirankumar.github.io/)
+
 
 ### 📁 Files Included:
 - `index.html` — Main webpage  
